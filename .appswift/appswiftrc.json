@@ -1,0 +1,44 @@
+{
+    "appswift": {
+        "continueTheming": true,
+        "shouldCommitCode": true,
+        "scmType": "git",
+        "scmUserName": "sukhad.mutagi@capgemini.com",
+        "scmPwd": "kadu11279",
+        "scmUrl": "https://github.com/sukhad-mutagi/aviva.git"
+    },
+    "cicdSwift": {
+        "jenkinsProps": {
+            "uploadPlugins": false,
+            "scmCredId": "1479973421136scm",
+            "jenkinsProtocol": "http://",
+            "jenkinsPath": "/",
+            "jenkinsHostName": "localhost",
+            "jenkinsPort": 8080,
+            "jenkinsUserId": "kkorada",
+            "jenkinsPassword": "kkorada",
+            "cdoeMavenName": "maven",
+            "cdoeSonarName": "SonarQube@10.102.22.59",
+            "scm": "git",
+            "codebaseUrl": "https://github.com/sukhad-mutagi/aviva.git",
+            "scmUserId": "sukhad.mutagi@capgemini.com",
+            "scmPwd": "kadu11279"
+        },
+        "cfProps": {
+            "cfApiEndPoint": "http://api.run.pivotal.io",
+            "cfCredId": "1479973421136cf",
+            "createDbService": true,
+            "cfProfile": "prod",
+            "dbServiceName": "cleardb",
+            "dbServicePlanName": "spark",
+            "noOfInstances": 1,
+            "appMemory": 1024,
+            "appDiskQuota": 1024,
+            "cfOrg": "vgupt007-org",
+            "cfSpace": "development",
+            "cfAppName": "avivaa",
+            "cfUserID": "vgupt007@gmail.com",
+            "cfPwd": "@kanbay123"
+        }
+    }
+}

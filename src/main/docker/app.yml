@@ -1,0 +1,16 @@
+version: '2'
+services:
+    avivaa-app:
+        image: avivaa
+        external_links:
+            - avivaa-mysql:mysql
+        environment:
+            - SPRING_PROFILES_ACTIVE=prod
+            - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/avivaa?useUnicode=true&characterEncoding=utf8&useSSL=false
+            - JHIPSTER_SLEEP=10 # gives time for the database to boot before the application
+        ports:
+            - 8008:8008
+    avivaa-mysql:
+        extends:
+            file: mysql.yml
+            service: avivaa-mysql
